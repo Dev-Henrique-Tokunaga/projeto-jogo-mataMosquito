@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game</title>
+</head>
+<body onresize="redimencionarTela()">
+    <div class="caixaPai">
+        <div class="painel">
+            <div class="vidas">
+                <img id="c1" src="img/coracao_cheio.png" alt="">
+                <img id="c2" src="img/coracao_cheio.png" alt="">
+                <img id="c3" src="img/coracao_cheio.png" alt="">
+                <img id="c4" src="img/coracao_cheio.png" alt="">
+                <img id="c5" src="img/coracao_cheio.png" alt="">
+
+            </div>
+
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
+        </div>
+
+        <script>
+            let criaMosquito = setInterval(function() {
+                posXYRandom()
+            }, criaMosqTempo)
+        </script>
+    </div>
+</body>
+</html>
